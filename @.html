@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Assignment Buddy</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f9fc;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #007bff;
+      color: white;
+      padding: 15px 20px;
+      position: center;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    /* Welcome Banner */
+    .banner {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url('https://img.freepik.com/free-photo/successful-group-students-graduating_53876-139116.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .banner h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .banner p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+    }
+
+    .banner button {
+      padding: 15px 30px;
+      background-color: #ffcc00;
+      border: none;
+      color: #333;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .banner button:hover {
+      background-color: #e6b800;
+    }
+
+    /* How It Works Section */
+    .how-it-works {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #ffffff;
+    }
+
+    .how-it-works h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .steps {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .step {
+      background-color: #e9f7fe;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      flex: 1 1 calc(30% - 40px);
+      max-width: 300px;
+    }
+
+    .step h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .step p {
+      font-size: 16px;
+    }
+
+    /* Testimonials Section */
+    .testimonials {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: #f5f9fc;
+    }
+
+    .testimonials h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .testimonial {
+      max-width: 300px;
+      margin: 0 auto;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* Contact Us Section */
+    .contact-us {
+      padding: 50px 20px;
+      background-color: #ffffff;
+    }
+
+    .contact-us h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: #f5f9fc;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      font-size: 16px;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    input, textarea, button, .file-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .file-input {
+      padding: 5px;
+      background-color: #fff;
+      color: #333;
+      border: 1px solid #ccc;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .steps {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .step {
+        max-width: 100%;
+      }
+
+      .navbar {
+        padding: 10px;
+      }
+
+      .banner h1 {
+        font-size: 36px;
+      }
+
+      .banner p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Your Assignment Buddy</h1>
+  </div>
+
+  <!-- Welcome Banner -->
+  <div class="banner">
+    <h1>Your Assignment Buddy!</h1>
+    <p>Struggling with assignments? We've got your back! Easy, fast, and reliable assistance is just a click away.</p>
+    <button>Learn More</button>
+  </div>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>Step 1</h3>
+        <p>Submit your assignment details using our simple form.</p>
+      </div>
+      <div class="step">
+        <h3>Step 2</h3>
+        <p>We review your request and assign the best expert for your needs.</p>
+      </div>
+      <div class="step">
+        <h3>Step 3</h3>
+        <p>Receive your completed assignment on time!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial">
+      "This service saved me so much time and stress! Highly recommend."
+      <div class="testimonial-author">- Sarah W.</div>
+    </div>
+    <div class="testimonial">
+      "Professional and efficient! My assignment was delivered perfectly."
+      <div class="testimonial-author">- David L.</div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact-us">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="name">Contact:</label>
+      <input type="text" id="contact" name="contact" placeholder="Enter Your Phone Number" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Write your inquiry here" required></textarea>
+
+      <label for="assignment">Attach Assignment:</label>
+      <input type="file" class="file-input" id="assignment" name="assignment" accept=".docx,.pdf,.jpg,.png,.jpeg">
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+      alert("Thank you for reaching out! We'll get back to you shortly.");
+      event.target.reset();
+    });
+  </script>
+</body>
+</html>
